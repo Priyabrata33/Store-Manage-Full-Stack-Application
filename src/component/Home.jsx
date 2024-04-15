@@ -19,9 +19,9 @@ function Home() {
   return (
     <>      
     <div className="justify-center" >
-        <NavLink to = '' className="flex items-center">
+        <NavLink to = '/' className="flex items-center">
             <div className='cards'> 
-              <NavLink to="/storeMangement" style={{textDecoration:'none'}}>
+              <NavLink to="storeMangement" style={{textDecoration:'none'}}>
                 <Cards cardDetailObj= {storeObj} />
               </NavLink>
                 <Cards cardDetailObj= {deliverObj}/>

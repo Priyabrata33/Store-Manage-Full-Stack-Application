@@ -60,7 +60,7 @@ function Page(){
             <div className="input">
             <TextField id="outlined-basic" label="Outlined" variant="outlined" className = 'entryField' value={num} onChange={toStore}/>
            <Button variant="contained" className = 'storeButton' onClick={buttonFunction}>Store Value</Button>
-           </div>
+        </div>
 
            <p className='displayText'>Store Value:{sum}</p>
 

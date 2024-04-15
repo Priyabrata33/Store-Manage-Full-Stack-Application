@@ -1,0 +1,7 @@
+.table{
+    margin: 7em 10em; /* Update the margins for desktop */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

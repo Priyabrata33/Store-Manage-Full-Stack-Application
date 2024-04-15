@@ -6,9 +6,9 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 
-export default function StoreManageCard(props) {
+export default function StoreManageCards(props) {
   return (
-    <NavLink to={`/storeMangement/${props.storeDetailObj.sName}`} storeObj= {props.storeDetailObj}> 
+    <NavLink to={`user/${props.storeDetailObj.sName}`}> 
       <Card sx={{ maxWidth: 345, boxShadow: 5 }}>
         <CardActionArea>
           <CardMedia

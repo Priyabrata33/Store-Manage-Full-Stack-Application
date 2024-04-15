@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import AddButton from '../AddButton'
+import AddDailyStoreUpdate from './StoreDetails/AddDailyStoreUpdate'
+import { useParams } from 'react-router-dom'
+import StoreTable from './StoreDetails/table/Table'
+import UserContext from '../../../context/UserContext'
+
+
 
 export default function Stores() {
-  let a =1;
-  console.log(a++);
+ 
+  const {storeName} = useParams();
+  const {stores} = useContext(UserContext);
+  
+  let store = {};
+  for(const check in stores){
+    if(storeName===stores[check].sName){
+      store =stores[check];
+      break;
+    }
+  }
+
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <>
+      <StoreTable store = {store}/>
+      <AddDailyStoreUpdate/>
+    </>
   )
 }
