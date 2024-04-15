@@ -14,6 +14,7 @@ import java.util.List;
 public class StudentController {
 
 
+    @Autowired
     public StudentService studentService;
     public StudentController (StudentService studentService){
         this.studentService=studentService;

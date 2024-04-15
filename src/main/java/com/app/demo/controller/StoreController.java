@@ -17,8 +17,12 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 public class StoreController {
 
+//   field injection
     public StoreService storeService;
 
+//    its always recommend to use construction injection instead of field injection Now  days we need all that a
+//    construction with all the bean we need for our controller its ok not to use the @autowired
+    @Autowired
     public StoreController(StoreService storeService){
         this.storeService = storeService;
     }

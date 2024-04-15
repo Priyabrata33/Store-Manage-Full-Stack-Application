@@ -21,7 +21,6 @@ public class StoreService {
     public void insertStore(@RequestBody Store store){
        System.out.println("StoreService");
         storeRepository.save(store);
-
     }
 
 
